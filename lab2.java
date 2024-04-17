@@ -10,7 +10,9 @@ public class Main {
         double[] randomArray = new double[arrayLength];
 
         // Генерація псевдовипадкових чисел з рівномірним розподілом
-        Random random = new Random();
+        // ефективніший ніж звичайний Random у 5 разів
+java.util.concurrent.ThreadLocalRandom random = java.util.concurrent.ThreadLocalRandom.current();
+        
         for (int i = 0; i < arrayLength; i++) {
             randomArray[i] = random.nextDouble(); // генерує числа від 0 до 1
         }
