@@ -1,0 +1,5 @@
+Product1, CountryA
+Product2, CountryB
+Product1, CountryC
+Product3, CountryA
+Product2, CountryC
